@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(clock\ picture);
+    background-size: cover;
+}
+
+.container{
+    width: 135vmin;
+    height: 55vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    position: relative;
+    top: 27vmin;
+    border-radius: 2rem;
+}
+
+.box{
+    height: 32vmin;
+    width: 130vmin;
+}
+    
+.clock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 180px;
+    width: 115vmin;
+    color: #fff;
+}
+
+.clock span{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    font-size: 190px;
+    width: 210px;
+}
+
+.clock span::after{
+    font-size: 23px;
+    position: absolute;
+    top: 220px;
+    left: 55px;
+}
+
+#hours::after{
+    content: 'HOURS';
+}
+
+#minutes::after{
+    content: 'MINUTES';
+}
+
+#seconds::after{
+    content: 'SECONDS';
+}
