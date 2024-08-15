@@ -1,0 +1,593 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    background-image: linear-gradient( to right, #0c0c0c, #524175);
+}
+
+/*------------------------- HOME -------------------------------*/
+
+#header{
+    height: 100vh;
+}
+.hero{
+    background-color: rgba(0, 0, 0, 0.619);
+    height: 12vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.herobtns{
+    display: flex;
+    justify-content: space-between;
+    width: 51vw;
+    margin-right: 99px;
+    margin-bottom: 10px;
+}
+
+.herobtns button{
+    background-color: transparent;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(182, 156, 215, 0.514);
+}
+
+.name{
+    color: white;
+    display: flex;
+    margin-left: 13rem;
+    margin-top: 12rem;
+    flex-direction: column;
+    width: 31rem;
+    animation: up-animate 1s ease-in forwards;
+}
+pre{
+    font-family: fantasy;
+    color: white;
+    font-size: 78px;
+    
+}
+
+p{
+    font-size: 22px;
+    color: rgb(226, 226, 217);
+    margin : 1px;
+}
+
+#headline{
+    color: grey;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.picture{
+    
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    background-image: url(photo.jpg);
+    background-size: 31rem 25rem;
+    background-repeat: no-repeat;
+    background-position: 35% 0%;
+    margin-top: 6rem;
+    margin-left: 13rem;
+    background-color: rgba(82, 65, 117, 0.001);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.home{
+    display: flex;
+    height: 100vh;
+}
+.container-about p{
+    color: white;
+}
+
+
+/*------------------------- ABOUT -------------------------------*/
+
+#about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-about{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 130vh;
+    height: 70vh;
+    text-align: center;
+}
+
+.aboutheading{
+    font-family: serif;
+    color: white;
+    font-size: 65px;
+    margin-top: -11rem;
+    
+}
+
+/*------------------------- PROJECTS -------------------------------*/
+
+#projects{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.projectheading{
+    font-size: 65px;
+}
+
+.container-projects{
+    
+    width: 55vh;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 7rem;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.container-projects button{
+    height: 40vh;
+    width: 85vh;
+    border: none;
+    border-radius: 1rem;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 0 1rem black;
+}
+
+#box1{
+    background-image: url(amazon\ clone.png);
+    background-size: cover;
+}
+
+#box2{
+    background-image: url(digital\ clock\ picture.png);
+    background-size: cover;
+}
+
+#box3{
+    background-image: url(to\ do\ picture.png);
+    background-size: cover;
+}
+
+#box4{
+    background-image: url(tic\ game.png);
+    background-size: cover;
+}
+
+.container-projects button::after{
+    position: absolute;
+    font-size: 23px;
+}
+
+#box1::after{
+    content: 'AMAZON CLONE';
+    color: white;
+    top: 20rem;
+    right: 13rem;
+}
+
+#box2::after{
+    content: 'DIGITAL CLOCK';
+    color: white;
+    top: 20rem;
+    right: 13rem;
+}
+
+#box3::after{
+    content: 'TO-DO LIST';
+    color: white;
+    top: 20rem;
+    right: 16rem;
+}
+
+#box4::after{
+    content: 'TIC TAC TOE';
+    color: white;
+    top: 20rem;
+    right: 15rem;
+}
+
+.a1{
+    animation: slideInleft 0.7s ease-in forwards;
+}
+
+.a2{
+    animation: slideInRight 0.7s ease-in forwards;
+}
+
+@keyframes slideInRight{
+    from {
+        opacity: 0.7;
+        transform: translateX(150px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInleft{
+    from {
+        opacity: 0.7;
+        transform: translateX(-150px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*------------------------- EDUCATION -------------------------------*/
+
+
+#education{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    margin-top: 11rem;
+    margin-bottom: 3rem;
+}
+
+.eduheading{
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20vh;
+}
+
+
+.text-edu{
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+.container-edu div{
+    border: 1px solid white;
+    background-color: #372a517b;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 30rem;
+    margin-top: 1rem;
+    width: 29rem;
+    box-shadow: 0 0 1rem black;
+}
+
+.slide-animate{
+    animation: slideInLeft 1s ease-in forwards;
+}
+
+@keyframes slideInLeft{
+    from {
+        opacity: 0.2;
+        transform: translateX(-150px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+div .undergraduate{
+    margin-left: 11%;
+}
+
+div .inter{
+    margin-left: 37%;
+}
+
+div .high-school{
+    margin-left: 57%;
+}
+
+/*------------------------- CONTACT -------------------------------*/
+
+
+#contact{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11rem;
+    margin-bottom: 2rem;
+}
+
+.contheading{
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+}
+
+.container-contact{
+    height: max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(227, 223, 223, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: rgba(0,0,0,0.4);
+    margin-bottom: 4rem;
+}
+
+#form{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form input{
+    height: 3rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background-color: rgba(227, 223, 223, 0.1);
+    padding: 5px;
+    border: 1px solid black;
+    color: white;
+}
+
+
+#submit{
+    background-color: #0c0c0c;
+    color: white;
+    width: 5rem;
+    margin-left: 7rem;
+}
+
+h4{
+    color: white;
+    font-size: 75px;
+}
+
+.follow{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30rem;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 1rem;
+    height: 5rem;
+    margin-left: 26rem;
+    color: white;
+}
+.hr{
+    width: 55rem;
+margin-left: 18rem;
+margin-top: 1rem;
+border-radius: 1rem;
+}
+
+.icons a{
+    color: white;
+}
+
+.icons a:hover{
+    color: rgba(86, 80, 80, 0.9);
+    margin-bottom: 10px;
+}
+
+#footer{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-solid{
+    display: none;
+}
+
+/*------------------------- CSS FOR SMALL SCREENS----------------------- */
+@media only screen and (max-width: 600px){
+     body{
+        background-image: linear-gradient( #0c0c0c, #524175);
+        height: 312vh;
+     }
+     .home{
+        height: 312vh;
+     }
+     pre{
+        font-size: 12rem;
+     }
+     #headline{
+        font-size: 36px;
+        width: 50rem;
+     }
+     p{
+        font-size: 46px;
+        width: 50rem;
+     }
+     #header{
+        width: 274vw;
+     }
+     .fa-solid{
+        display: block;
+        font-size: 59px;
+        color: white;
+    }
+    .hero{
+        position: fixed;
+        top: 0;
+        right: -17rem;
+        height:313vh;
+        width: 17rem;
+        align-items: start;
+        z-index: 1;
+        transition: right 0.5s;
+        background-color: black;
+
+    }
+    .herobtns{
+        flex-direction: column;
+        margin-right: 51px;
+        align-items: start;
+        margin-top: 13rem;
+        height: 24rem;
+    }
+    .picture{
+        margin: 0;
+        position: absolute;
+        left: 4rem;
+        right: 1px;
+        top: 22rem;
+        height: 67rem;
+        width: 67rem;
+        background-color: #524175;
+        background-size: contain; 
+        background-position: 0px 50px;
+    }
+    .name{
+        margin-left: 4rem;
+        margin-top: 69rem;
+        z-index: 1;
+    }
+    .herobtns .fa-x{
+        position: absolute;
+        top: 19px;
+        left: 22px;
+    }
+    .fa-bars{
+        right: 3rem;
+        top: 2rem;
+        position: fixed;
+        font-size: 59px;
+    }
+    #about{
+        margin-top: 114rem;
+        height: 45;
+        width: 73;
+        margin-left: 36rem;
+    }
+    #projects{
+        margin-top: 85rem;
+        margin-left: 37rem;
+    }
+    .projectheading{
+        width: 32rem;
+    }
+    #education{
+        height: 100vh;
+        margin-top: 31rem;
+    }
+    .eduheading{
+        margin-left: 20rem;
+        width: 36rem;
+    }
+    .container-edu div{
+        margin-bottom: 1rem;
+        padding: 1rem;
+        width: 30rem;
+        margin-top: 1rem;
+        height: 15rem;
+        font-size: 1.7rem;
+    }
+    div .undergraduate{
+        margin-top: 8rem;
+        margin-left: 34%;
+    }
+    
+    div .inter{
+        margin-left: 70%;
+    }
+    
+    div .high-school{
+        margin-left: 98%;
+    }
+    .text-edu{
+        font-size: 21px;
+    }
+    #contact{
+        margin-left: 38rem;
+        margin-top: 121rem;
+        height: 127vh;
+    }
+    #footer .herobtns{
+        flex-direction: row;
+        margin-bottom: 25rem;
+        margin-left: 10rem;
+        height: 7rem;
+    }
+    .hr{
+        margin-left: 7rem;
+        margin-bottom: 6rem;
+    }
+    #footer button{
+        padding: 2rem;
+    }
+    .follow{
+        width: 68rem;
+    }
+    .container-contact{
+    margin-left: -6rem;
+    margin-top: -19rem;
+    height: 44rem;
+    width: 40rem;
+    margin-bottom: 0;
+    }
+    .contheading{
+        position: relative;
+        top: -23rem;
+        left: -3rem;
+        width: max-content;
+    }
+    .icons{
+        margin-left: 5rem;
+    }
+    h3{
+        font-size: 40px;
+        margin-top: 3rem;
+    }
+    form input{
+        height: 3rem;
+        width:26rem;
+        padding: 20px;
+        font-size: 27px;
+    }
+    #submit{
+        height: 4rem;
+        width: max-content;
+        margin-left: 10rem;
+    }
+    }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+
+<!-------------------------------- HOME --------------------------->
+
+
+    <div id="header">
+        <div class="hero">
+            <div class ="herobtns">
+                <button><a href="#home">HOME</a></button>
+                <button><a href="#about">ABOUT</a></button>
+                <button><a href="#projects">PROJECTS</a></button>
+                <button><a href="#education">EDUCATION</a></button>
+                <button><a href="#contact">CONTACT</a></button>
+                <i id="closeicon" class="fa-solid fa-x" onclick="closemenu()"></i>
+            </div>
+            <i id="openicon" class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+    <div class="home">
+        <div class="name">
+            <pre>Sakshi <br>        Sinha</pre>
+            <p id="headline">Aspiring Web Developer & Coding Enthusiast <br></p>
+               <p> BCA Graduate | Proficient in HTML, CSS, JavaScript | Eager to Learn and Grow in the IT Field
+            </p>
+        </div>
+        <div class="picture">
+
+        </div>
+    </div>      
+</div>
+
+<!-------------------- ABOUT ----------------------->
+
+
+<div id="about">
+        <div class="container-about">
+            <h2 class="aboutheading">ABOUT ME</h2>
+            <p>As a passionate BCA graduate with a strong foundation in computer science and a keen interest in coding, I am driven to build a successful career in the IT field. My educational background has equipped me with essential programming skills.<br>
+                <br>
+                I thrive in dynamic environments where I can leverage my problem-solving abilities and creativity to develop innovative solutions. Whether it's working on complex algorithms, developing web applications, or exploring new technologies, I am always eager to take on new challenges and expand my knowledge.<br>
+                <br>
+                I am particularly interested in areas such as full-stack development, software engineering, and data science. My goal is to contribute to impactful projects and collaborate with like-minded professionals to drive technological advancements.</p>
+        </div>
+</div>
+
+<!----------------------- PROJECTS -------------------------->
+
+
+<div id="projects">
+    <h1 class="projectheading">MY PROJECTS</h1>
+    <div class="container-projects">
+                <button class="a1" id="box1"></button>
+                <button class="a2" id="box2"></button>
+                <button class="a1" id="box3"></button>
+                <button class="a2" id="box4"></button>
+    </div>
+</div>
+
+<!--------------------- EDUCATION ----------------------------------->
+
+<div id="education">
+    <h1 class="eduheading">MY EDUCATION</h1>
+    <div class="container-edu">
+        <div class="undergraduate slide-animate edu_div" >
+            <h3>Undergraduate<br>(2021-2024)</h3>
+            <br>
+            <p class="text-edu">
+ College Name: Ambalika Instite Of Higher Education<br>
+ Location: Lucknow, Uttar Pradesh<br>
+ Percentage Scored: 70%
+            </p>
+        </div>
+
+        <div class="inter slide-animate edu_div" >
+            <h3>Intermediate<br>(2020-2021)</h3>
+            <br>
+            <p class="text-edu">
+ School Board: CBSE<br>
+ Location: Lucknow, Uttar Pradesh<br>
+ Percentage Scored: 83%
+            </p>
+        </div>
+
+        <div class="high-school slide-animate edu_div" >
+            <h3>Matriculation<br>(2018-2019)</h3>
+            <br>
+            <p class="text-edu">
+ School Board: CBSE<br>
+ Location: Lucknow, Uttar Pradesh<br>
+ Percentage Scored: 84%
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+<!------------------------ CONTACT --------------------------->
+
+<div id="contact">
+    <h1 class="contheading">CONTACT ME</h1>
+    <div class="container-contact">
+        <h3 style="color: rgba(200, 160, 160, 0.307);">LEAVE YOUR MESSAGE</h3>
+        <form id="form">
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br>
+            <input type="text" id="message" placeholder="Write your message here" required><br>
+            <br>
+            <input id="submit" type="Submit">
+
+        </form>
+    </div>
+</div>
+
+<!----------------------------------- follow --------------------------------------->
+
+<div class="follow">
+    <h4>Follow Me</h4>
+    <div class="icons">
+        <a href="https://www.facebook.com/profile.php?id=100022332150088&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/sakshiisinha_?igsh=azhpNjN4aGFybjFp" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/Sakshi25925015?t=GfRlIG4GRYRAtl2KwU8Plg&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="t.me/Sakshiiiiiii9"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://www.linkedin.com/in/sakshi-sinha-262475233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+</div>
+
+<hr class="hr">
+<footer id="footer">
+    <div class ="herobtns">
+        <button><a href="#home">HOME</a></button>
+        <button><a href="#about">ABOUT</a></button>
+        <button><a href="#projects">PROJECTS</a></button>
+        <button><a href="#education">EDUCATION</a></button>
+        <button><a href="#contact">CONTACT</a></button>
+        
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
