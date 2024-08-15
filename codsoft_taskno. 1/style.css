@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    height: 100%;
+    background-image: linear-gradient(to bottom, #392d69, #b57bee);
+    text-align: center;
+    
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    padding: 10vh;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+h1{
+    margin-top: 6rem;
+}
+
+.list{
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.2vmin;
+    padding: 3vh;
+    display: grid;
+    margin-left: -53px;
+}
+
+#tasks{
+    background-color: #C2B9DF;
+    border: none;
+    border-radius: 1rem;
+    height: 5vmin;
+    width: 35vmin;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    font-size: 2.5vmin;
+    color: black;
+    padding-left: 3vh;
+    display: flex;
+}
+
+#addbtn{
+    background-color: #20183A;
+    color: beige;
+    height: 5vmin;
+    width: 14vmin;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.textfeild{
+    display: flex;
+    
+    width: 55vmin;
+    align-items: center;
+    margin-left: 69px;
+
+}
+
+.hide{
+    display: none;
+}
+
+li {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #302456;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 1.4vmin; 
+    display: flex;
+    align-items: center; 
+    margin-left: 72px;
+    width: 24rem;
+    text-transform: capitalize;
+}
+
+
+li button{
+    background-color: #CFC7E5;
+    color: black;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+    width: 4rem;
+    height: 1.2rem;
+}
+
+li button:hover{
+    background-color: black;
+    color: #CFE0C3;
+    cursor: pointer;
+}
+
+#dltTask{
+    margin-right: 0.5rem;
+}
+
+#editTask{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+span{
+    margin-left : 0.5rem;
+    width: 15rem;
+    display: flex;
+    justify-content: start;
+    word-wrap: break-word;
+    padding: 7px;
+}
+
+#newtext{
+    background-color: #18122B;
+    color: white;
+    font-size: 20px;
+    width: 14rem;
+    border:1px solid rgba(245, 245, 220, 0.263);
+    
+}
+
