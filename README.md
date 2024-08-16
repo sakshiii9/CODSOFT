@@ -1,4 +1,5 @@
 This repository contains the projects I completed during my virtual internship at CodSoft. 
+<br>
 The tasks include a To-Do List application, a Digital Clock, and a Responsive Portfolio. Each project is built using HTML, CSS, and JavaScript, with additional tools and libraries where applicable.
 
 Projects Overview
